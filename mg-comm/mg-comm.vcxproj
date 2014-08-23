@@ -94,11 +94,46 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="..\lib\ChartCtrl\ChartBalloonLabel.inl" />
+    <None Include="..\lib\ChartCtrl\ChartLabel.inl" />
+    <None Include="..\lib\ChartCtrl\ChartPointsArray.inl" />
+    <None Include="..\lib\ChartCtrl\ChartSerieBase.inl" />
     <None Include="ReadMe.txt" />
     <None Include="res\mg-comm.ico" />
     <None Include="res\mgcomm.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\lib\ChartCtrl\ChartAxis.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartAxisLabel.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartBalloonLabel.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartBarSerie.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartCandlestickSerie.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartCrossHairCursor.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartCtrl.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartCursor.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartDateTimeAxis.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartDragLineCursor.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartFont.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartGanttSerie.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartGradient.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartGrid.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartLabel.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartLegend.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartLineSerie.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartLogarithmicAxis.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartMouseListener.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartPointsArray.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartPointsSerie.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartScrollBar.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartSerie.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartSerieBase.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartSeriesMouseListener.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartStandardAxis.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartString.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartSurfaceSerie.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartTitle.h" />
+    <ClInclude Include="..\lib\ChartCtrl\ChartXYSerie.h" />
+    <ClInclude Include="..\lib\ChartCtrl\PointsOrdering.h" />
     <ClInclude Include="mg-comm.h" />
     <ClInclude Include="mg-commDlg.h" />
     <ClInclude Include="Resource.h" />
@@ -106,6 +141,29 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\lib\ChartCtrl\ChartAxis.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartAxisLabel.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartBarSerie.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartCandlestickSerie.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartCtrl.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartCursor.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartDragLineCursor.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartFont.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartGanttSerie.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartGradient.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartGrid.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartLegend.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartLineSerie.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartPointsSerie.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartScrollBar.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartSerie.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartStandardAxis.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartTitle.cpp" />
+    <ClCompile Include="..\lib\ChartCtrl\ChartXYSerie.cpp" />
     <ClCompile Include="mg-comm.cpp" />
     <ClCompile Include="mg-commDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
