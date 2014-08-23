@@ -1,4 +1,4 @@
-# mg-comm - ´®¿Úµ÷ÊÔ¹¤¾ß #
+ï»¿# mg-comm - ä¸²å£è°ƒè¯•å·¥å…· #
 
 *	[MTTTY - http://msdn.microsoft.com/en-us/library/ms810467.aspx](http://msdn.microsoft.com/en-us/library/ms810467.aspx)
 
