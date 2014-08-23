@@ -37,13 +37,9 @@
 
 #include <afxcontrolbars.h>     // 功能区和控件条的 MFC 支持
 
-
-
-
-
-
-
-
+#ifdef _DEBUG
+#pragma comment( linker, "/subsystem:console /entry:wWinMainCRTStartup" )
+#endif
 
 #ifdef _UNICODE
 #if defined _M_IX86

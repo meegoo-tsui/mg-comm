@@ -6,6 +6,8 @@
 #include "mg-comm.h"
 #include "mg-commDlg.h"
 #include "afxdialogex.h"
+#include <io.h>
+#include <fcntl.h>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -65,6 +67,18 @@ BEGIN_MESSAGE_MAP(CmgcommDlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 END_MESSAGE_MAP()
 
+#ifdef _DEBUG
+void init_console_window(void)
+{
+	int nCrt = 0;
+	AllocConsole();
+	nCrt = _open_osfhandle((long)GetStdHandle(STD_OUTPUT_HANDLE), _O_TEXT);
+	*stdout = *_fdopen(nCrt, "w");
+	setvbuf(stdout, NULL, _IONBF, 0);
+
+	return;
+}
+#endif
 
 // CmgcommDlg 消息处理程序
 
@@ -98,6 +112,10 @@ BOOL CmgcommDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
+	#ifdef _DEBUG
+	init_console_window();
+	printf("Init console windows done.\n");
+	#endif
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
